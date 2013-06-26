@@ -57,6 +57,9 @@ node default {
   include git
   include hub
   include nginx
+  include skype
+  include osx
+  include hipchat
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
