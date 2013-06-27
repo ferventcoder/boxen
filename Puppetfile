@@ -31,7 +31,7 @@ github "ruby",       "4.1.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 github "hipchat",	 "1.0.6"
-github "osx",		 "1.3.1"
+#github "osx",		 "1.3.1"
 github "skype",		 "1.0.3"
 
 

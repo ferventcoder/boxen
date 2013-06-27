@@ -58,7 +58,7 @@ node default {
   include hub
   include nginx
   include skype
-  include osx
+  #include osx
   include hipchat
 
   # fail if FDE is not enabled
