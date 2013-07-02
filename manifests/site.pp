@@ -58,8 +58,15 @@ node default {
   include hub
   include nginx
   include skype
-  #include osx
   include hipchat
+
+  #OSX settings
+  include osx::dock::autohide
+  include osx::dock::clear_dock
+  include osx::finder::show_all_on_desktop
+  include osx::disable_app_quarantine
+  include osx::no_network_dsstores
+  include osx::recovery_message { 'If this Mac is found, please call 785-783-4720': }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
