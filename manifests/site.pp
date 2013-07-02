@@ -66,7 +66,7 @@ node default {
   include osx::finder::show_all_on_desktop
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
-  include osx::recovery_message { 'If this Mac is found, please call 785-783-4720': }
+  osx::recovery_message { 'If this Mac is found, please call 785-783-4720': }
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
