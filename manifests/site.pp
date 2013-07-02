@@ -51,6 +51,8 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
+osx::recovery_message { 'If this Mac is found, please call Rob at 785-783-4720': }
+
 node default {
   # core modules, needed for most things
   include dnsmasq
@@ -66,7 +68,7 @@ node default {
   include osx::finder::show_all_on_desktop
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
-  osx::recovery_message { 'If this Mac is found, please call 785-783-4720': }
+
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
