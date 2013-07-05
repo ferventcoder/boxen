@@ -51,7 +51,7 @@ Service {
 
 Homebrew::Formula <| |> -> Package <| |>
 
-osx::recovery_message { 'If this Mac is found, please call Rob at 785-783-4720': }
+#osx::recovery_message { 'If this Mac is found, please call Rob at 785-783-#4720': }
 
 node default {
   # core modules, needed for most things
