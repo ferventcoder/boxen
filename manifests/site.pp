@@ -69,7 +69,6 @@ node default {
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
-
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
